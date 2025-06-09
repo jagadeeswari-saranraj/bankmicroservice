@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to bank account related local APIs"
+  contactDetails:
+    name: "peter"
+    email: "peter@gmail.com"
+  onCallSupport:
+    -(91) 55525 55525
+    -(91) 55524 55524

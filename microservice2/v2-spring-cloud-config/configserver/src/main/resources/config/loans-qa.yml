@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to bank loans related local APIs in qa"
+  contactDetails:
+    name: "peter"
+    email: "peter@gmail.com"
+  onCallSupport:
+    -(91) 55525 55525
+    -(91) 55524 55524

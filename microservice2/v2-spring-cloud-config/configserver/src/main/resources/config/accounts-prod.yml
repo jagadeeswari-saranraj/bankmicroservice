@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to bank account related local APIs in jagaproduction"
+  contactDetails:
+    name: "jamespeter"
+    email: "{cipher}8b7f3cec8fe47079cded8d5c1ae0f986e20221254a20a1ec58360ba4ec48faf5"
+  onCallSupport:
+    -(91) 55525 55525
+    -(91) 55524 55524
