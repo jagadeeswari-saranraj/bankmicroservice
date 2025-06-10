@@ -1,0 +1,15 @@
+package com.microservice_accounts.service.client;
+
+import com.microservice_accounts.dto.CardsDTO;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@FeignClient("cards")
+public interface CardsFiegnClient {
+
+    @GetMapping(value="/api/fetch", consumes = "application/json")
+    public ResponseEntity<CardsDTO> fetchCardDetails(@RequestParam String mobileNumber);
+
+}
