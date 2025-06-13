@@ -1,0 +1,47 @@
+cd configserver
+mvn jib:dockerBuild
+cd ..
+cd eurekaserver
+mvn jib:dockerBuild
+cd ..
+cd microservice_accounts
+mvn jib:dockerBuild
+cd ..
+cd microservice_cards
+mvn jib:dockerBuild
+cd ..
+cd microservice_loans
+mvn jib:dockerBuild
+cd ..
+cd gatewayserver
+mvn jib:dockerBuild
+cd ..
+
+
+docker image push docker.io/jagadeeswari/configserver:m10
+docker image push docker.io/jagadeeswari/eurekaserver:m10
+docker image push docker.io/jagadeeswari/microservice_accounts:m10
+docker image push docker.io/jagadeeswari/microservice_cards:m10
+docker image push docker.io/jagadeeswari/microservice_loans:m10
+docker image push docker.io/jagadeeswari/gatewayserver:m10
+cd ..
+
+
+cd configserver
+mvn clean install
+cd ..
+cd eurekaserver
+mvn clean install
+cd ..
+cd microservice_accounts
+mvn clean install
+cd ..
+cd microservice_cards
+mvn clean install
+cd ..
+cd microservice_loans
+mvn clean install
+cd ..
+cd gatewayserver
+mvn clean install
+cd ..

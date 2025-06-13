@@ -1,0 +1,29 @@
+global:
+  scrape_interval:     5s # Set the scrape interval to every 5 seconds.
+  evaluation_interval: 5s # Evaluate rules every 5 seconds.
+
+scrape_configs:
+  - job_name: 'ms-accounts'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-accounts:8080' ]
+  - job_name: 'ms-loans'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-loans:8070' ]
+  - job_name: 'ms-cards'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-cards:9000' ]
+  - job_name: 'ms-gatewayserver'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-gatewayserver:8072' ]
+  - job_name: 'ms-eurekaserver'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-eurekaserver:8060' ]
+  - job_name: 'ms-configserver'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: [ 'ms-configserver:8071' ]
