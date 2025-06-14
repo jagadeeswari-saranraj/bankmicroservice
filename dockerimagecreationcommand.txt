@@ -18,12 +18,12 @@ mvn jib:dockerBuild
 cd ..
 
 
-docker image push docker.io/jagadeeswari/configserver:m10
-docker image push docker.io/jagadeeswari/eurekaserver:m10
-docker image push docker.io/jagadeeswari/microservice_accounts:m10
-docker image push docker.io/jagadeeswari/microservice_cards:m10
-docker image push docker.io/jagadeeswari/microservice_loans:m10
-docker image push docker.io/jagadeeswari/gatewayserver:m10
+docker image push docker.io/jagadeeswari/configserver:m11
+docker image push docker.io/jagadeeswari/eurekaserver:m11
+docker image push docker.io/jagadeeswari/microservice_accounts:m11
+docker image push docker.io/jagadeeswari/microservice_cards:m11
+docker image push docker.io/jagadeeswari/microservice_loans:m11
+docker image push docker.io/jagadeeswari/gatewayserver:m11
 cd ..
 
 
