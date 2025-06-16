@@ -117,7 +117,7 @@
 				<version>3.4.5</version>
 				<configuration>
 					<to>
-						<image>jagadeeswari/${project.artifactId}:m13</image>
+						<image>jagadeeswari/${project.artifactId}:m14</image>
 					</to>
 				</configuration>
 			</plugin>
