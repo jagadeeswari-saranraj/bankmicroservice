@@ -16,6 +16,9 @@ cd ..
 cd gatewayserver
 mvn jib:dockerBuild
 cd ..
+cd message
+mvn jib:dockerBuild
+cd ..
 
 
 docker image push docker.io/jagadeeswari/configserver:m12

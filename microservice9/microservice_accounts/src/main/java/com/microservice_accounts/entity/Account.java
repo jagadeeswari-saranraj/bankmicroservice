@@ -29,6 +29,9 @@ public class Account extends BaseEntity {
 	@Column(name="branch_address")	
 	private String branchAddress;
 
+	@Column(name = "communication_sw")
+	private Boolean communicationSw;
+
 	public Long getCustomerId() {
 		return customerId;
 	}
@@ -68,6 +71,12 @@ public class Account extends BaseEntity {
 	public void setBranchAddress(String branchAddress) {
 		this.branchAddress = branchAddress;
 	}
-	
-	
+
+	public Boolean getCommunicationSw() {
+		return communicationSw;
+	}
+
+	public void setCommunicationSw(Boolean communicationSw) {
+		this.communicationSw = communicationSw;
+	}
 }
