@@ -1,0 +1,6 @@
+dependencies:
+- name: jagabank-common
+  repository: file://../../jagabank-common
+  version: 0.1.0
+digest: sha256:febf43c39c24d4a6bc6ef5dcc061fc189b4b596464e88fd706b20cc8f776f184
+generated: "2025-06-20T16:16:29.1552423+05:30"

@@ -1,9 +1,6 @@
 cd configserver
 mvn jib:dockerBuild
 cd ..
-cd eurekaserver
-mvn jib:dockerBuild
-cd ..
 cd microservice_accounts
 mvn jib:dockerBuild
 cd ..
@@ -21,13 +18,18 @@ mvn jib:dockerBuild
 cd ..
 
 
-docker image push docker.io/jagadeeswari/configserver:m14
-docker image push docker.io/jagadeeswari/eurekaserver:m14
-docker image push docker.io/jagadeeswari/microservice_accounts:m14
-docker image push docker.io/jagadeeswari/microservice_cards:m14
-docker image push docker.io/jagadeeswari/microservice_loans:m14
-docker image push docker.io/jagadeeswari/gatewayserver:m14
-docker image push docker.io/jagadeeswari/message:m14
+
+# cd ..
+# cd eurekaserver
+# mvn jib:dockerBuild
+# docker image push docker.io/jagadeeswari/eurekaserver:m17
+
+docker image push docker.io/jagadeeswari/configserver:m17
+docker image push docker.io/jagadeeswari/microservice_accounts:m17
+docker image push docker.io/jagadeeswari/microservice_cards:m17
+docker image push docker.io/jagadeeswari/microservice_loans:m17
+docker image push docker.io/jagadeeswari/gatewayserver:m17
+docker image push docker.io/jagadeeswari/message:m17
 cd ..
 
 
@@ -49,3 +51,63 @@ cd ..
 cd gatewayserver
 mvn clean install
 cd ..
+
+
+
+cd accounts
+helm dependencies build
+cd ..
+cd cards
+helm dependencies build
+cd ..
+cd configserver
+helm dependencies build
+cd ..
+cd loans
+helm dependencies build
+cd ..
+cd gatewayserver
+helm dependencies build
+cd ..
+cd message
+helm dependencies build
+cd ..
+cd ..
+cd environment
+cd dev-env
+helm dependencies build
+helm template .
+cd ..
+cd qa-env
+helm dependencies build
+helm template .
+cd ..
+cd prod-env
+helm dependencies build
+helm template .
+
+
+
+cd ..
+cd grafana
+helm dependencies build
+cd ..
+cd grafana-loki
+helm dependencies build
+cd ..
+cd grafana-tempo
+helm dependencies build
+cd ..
+cd keycloak
+helm dependencies build
+cd ..
+cd kafka
+helm dependencies build
+cd ..
+
+
+helm install keycloak keycloak
+helm install kafka kafka
+helm install loki grafana-loki
+helm install tempo grafana-tempo
+helm install grafana grafana

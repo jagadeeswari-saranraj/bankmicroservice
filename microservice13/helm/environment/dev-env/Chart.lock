@@ -1,0 +1,27 @@
+dependencies:
+- name: jagabank-common
+  repository: file://../../jagabank-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../jagabank-services/configserver
+  version: 0.1.0
+- name: eurekaserver
+  repository: file://../../jagabank-services/eurekaserver
+  version: 0.1.0
+- name: accounts
+  repository: file://../../jagabank-services/accounts
+  version: 0.1.0
+- name: cards
+  repository: file://../../jagabank-services/cards
+  version: 0.1.0
+- name: loans
+  repository: file://../../jagabank-services/loans
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../jagabank-services/gatewayserver
+  version: 0.1.0
+- name: message
+  repository: file://../../jagabank-services/message
+  version: 0.1.0
+digest: sha256:2901cfc398bb114b786fad2870af17cc09f54f48ad80866118c8afddb75aeaca
+generated: "2025-06-20T16:43:47.4180568+05:30"
