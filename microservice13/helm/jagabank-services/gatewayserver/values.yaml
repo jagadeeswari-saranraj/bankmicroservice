@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: jagadeeswari/gatewayserver
-  tag: m17
+  tag: m18
 
 containerPort: 8072
 

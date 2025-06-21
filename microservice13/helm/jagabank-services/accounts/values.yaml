@@ -10,7 +10,7 @@ replicaCount: 2
 
 image:
   repository: jagadeeswari/microservice_accounts
-  tag: m17
+  tag: m18
 
 containerPort: 8080
 

@@ -71,7 +71,7 @@
 				<version>3.4.5</version>
 				<configuration>
 					<to>
-						<image>jagadeeswari/${project.artifactId}:m17</image>
+						<image>jagadeeswari/${project.artifactId}:m18</image>
 					</to>
 				</configuration>
 			</plugin>

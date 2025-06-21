@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: jagadeeswari/microservice_loans
-  tag: m17
+  tag: m18
 
 containerPort: 8070
 

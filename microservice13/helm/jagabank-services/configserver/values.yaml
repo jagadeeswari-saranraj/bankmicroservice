@@ -10,7 +10,7 @@ replicaCount: 1
 
 image:
   repository: jagadeeswari/configserver
-  tag: m17
+  tag: m18
 
 containerPort: 8071
 
