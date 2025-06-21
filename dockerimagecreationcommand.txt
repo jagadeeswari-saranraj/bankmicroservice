@@ -89,6 +89,12 @@ helm template .
 
 
 cd ..
+cd keycloak
+helm dependencies build
+cd ..
+cd kafka
+helm dependencies build
+cd ..
 cd grafana
 helm dependencies build
 cd ..
@@ -98,10 +104,7 @@ cd ..
 cd grafana-tempo
 helm dependencies build
 cd ..
-cd keycloak
-helm dependencies build
-cd ..
-cd kafka
+cd kube-prometheus
 helm dependencies build
 cd ..
 
@@ -110,4 +113,5 @@ helm install keycloak keycloak
 helm install kafka kafka
 helm install loki grafana-loki
 helm install tempo grafana-tempo
+helm install prometheus kube-prometheus
 helm install grafana grafana

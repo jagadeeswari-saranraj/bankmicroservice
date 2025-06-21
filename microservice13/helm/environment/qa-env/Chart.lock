@@ -5,9 +5,6 @@ dependencies:
 - name: configserver
   repository: file://../../jagabank-services/configserver
   version: 0.1.0
-- name: eurekaserver
-  repository: file://../../jagabank-services/eurekaserver
-  version: 0.1.0
 - name: accounts
   repository: file://../../jagabank-services/accounts
   version: 0.1.0
@@ -23,5 +20,5 @@ dependencies:
 - name: message
   repository: file://../../jagabank-services/message
   version: 0.1.0
-digest: sha256:2901cfc398bb114b786fad2870af17cc09f54f48ad80866118c8afddb75aeaca
-generated: "2025-06-20T16:43:47.4180568+05:30"
+digest: sha256:bd2d3127ccd04cf1cfc79ac3bf54732ab8d69551cf1643507b457f4a7da95d73
+generated: "2025-06-21T13:53:51.5162364+05:30"

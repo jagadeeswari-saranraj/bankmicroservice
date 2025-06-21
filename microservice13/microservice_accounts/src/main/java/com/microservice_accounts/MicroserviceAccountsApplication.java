@@ -17,7 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.microservice_accounts.service.client")
 //@ComponentScans({ @ComponentScan("com.microservice_accounts.controller") })
 //@EnableJpaRepositories("com.microservice_accounts.repository")
 //@EntityScan("com.microservice_accounts.model")

@@ -42,7 +42,7 @@ items:
       name: namespace-reader
     rules:
       - apiGroups: ["", "extensions", "apps"]
-        resources: ["services", "endpoints"]
+        resources: ["services", "endpoints",  "pods"]
         verbs: ["get", "list", "watch"]
   - apiVersion: apps/v1
     kind: Deployment
